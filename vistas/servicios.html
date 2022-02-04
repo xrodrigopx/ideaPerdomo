@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/095870f72a.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../estilos/estilos.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tienda Perdomo</title>
+</head>
+
+<body>
+    <header id="mainHeader">            
+        <h1 class="headerText">Tienda de Mascotas</h1>
+        <nav id="mainNav">
+            <div>
+                <ul>
+                    <li><a href="/index.html">Inicio</a></li>
+                    <li>
+                        <a href="./productos.html">Productos</a>
+                        <ul class="type__menu type__menu--hover">
+                            <li><a href="./productos.html">Perro</a></li>
+                            <li><a href="./productos.html">Gato</a></li>
+                            <li><a href="./productos.html">Ave</a></li>
+                            <li><a href="./productos.html">Reptil</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./galeria.html">Galería</a></li>
+                    
+                    <li><a href="#">Servicios</a></li> 
+                    <li><a href="./multimedia.html">Multimedia</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>  
+        <article class="contactarticle">            
+                <h2>Agenda de servicios</h2>
+                <div class="serviceform__container">
+                <form action="" enctype="" method="">            
+                    <div class="serviceinput__area">
+                        <label for="nombre__agendado">Nombre</label> 
+                        <input id="nombre__agendado" placeholder="Nombre" name="nombre__agendado"> 
+                      
+                    
+                        <label for="apellido__agendado">Apellido</label>
+                        <input id="apellido__agendado" placeholder="Apellido" name="apellido__agendado"> 
+                    
+                        <label for="email__agendado">E-mail</label>
+                        <input id="email__agendado" placeholder="E-mail" name="email__agendado"> 
+                    
+                        <label for="direccion__agendado">Dirección</label>
+                        <input id="direccion__agendado" placeholder="Dirección" name="direccion__agendado"> 
+                      
+                    
+                        <label for="telefono__agendado">Teléfono</label>
+                        <input id="telefono__agendado" placeholder="Teléfono" name="telefono__agendado"> 
+                        
+                        
+                        <input type="radio" name="lugar"> <p>En local</p>
+                        
+                        <input type="radio" name="lugar"> <p>A domicilio</p>
+                        
+                    
+                     
+                        <label for="servicio">Elegir Servicio</label>
+                        <select id="selectservice" name="selectservice">
+                            <option value="castracion">Castración</option>
+                            <option value="cortapelo">Corte de Pelo</option>
+                            <option value="bano">Baño</option>
+                            <option value="consulta">Consulta General</option>
+                        </select>
+                    </div>
+                    <div class="servicios__textarea">
+                        <label>Información adicional</label>    
+
+                        <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Deje su mensaje y lo contactaremos a la brevedad"></textarea>
+                        <input type="submit" value="ENVIAR">   
+                    </div> 
+                </form>   
+            </div>          
+        </article>                    
+    </main>    
+    <footer class="footer__box" id="contacto">        
+        <div class="form__container">  
+            <form>
+                <h1>Suscríbete a nuestro Newsletter</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est dolores accusamus, nostrum consequatur temporibus quas modi nobis aspernatur quidem aliquid.</p>
+                <div class="email-box">
+                    <i class="fas fa-envelope"></i>
+                    <input class="finput" type="email" placeholder="Ingresa tu E-mail">
+                    <button class="fbtn">Suscríbete!</button>
+                </div>
+            </form>   
+            <img src="/multimedia/ubicacion.jpg" alt="mapa hacia el lugar" class="ubication">
+            <div class="contact__social">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-youtube"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-twitter"></a>
+            </div>  
+        </div>         
+    </footer>
+</body>
+</html>

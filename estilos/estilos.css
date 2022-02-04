@@ -1,0 +1,584 @@
+* {
+   margin: 0;
+   padding: 0;
+   
+   
+   box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #2EC4B6;
+   } 
+
+ #mainHeader {
+    background-image: url(https://static.vecteezy.com/system/resources/previews/000/464/025/non_2x/dog-seamless-pattern-theme-bone-paw-foot-print-for-use-as-wallpaper-or-background-vector.jpg);     
+    text-align: center;  
+    position: fixed;    
+    width: 100%;
+    height: 5rem;
+    top: 0;
+    z-index: 1;
+   }  
+.headerText {
+   position: relative;
+   top: 1rem;
+   } 
+ #mainNav {      
+    background: #FFBF69;
+    color: black;   
+    margin-top: 2rem;  
+    text-align: center;
+    position: fixed;    
+    width: 100%;
+    z-index: 1;   
+ }
+ #mainNav ul {       
+    list-style: none; 
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);    
+    justify-content:center    
+ }
+ #mainNav ul li {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1rem;
+    position: relative;
+    color: solid black;
+ }
+ #mainNav ul li a {
+    text-decoration: none;
+    color: black;
+ }
+ #mainNav ul li ul {
+    display: none;
+ }
+ #mainNav ul li:hover {
+    cursor: pointer;
+    background-color: coral;
+    color: solid black;
+ }
+ #mainNav ul li:hover a {
+    color: solid black;
+    
+ }
+ #mainNav ul li:hover ul {
+    display: block;
+    position: absolute;
+    left: 0cm;
+    width: 100%;
+    margin-top: 1rem;
+ }
+ #mainNav ul li:hover ul li {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    background-color: #FFBF69;
+    align-items: center;
+ }
+ #mainNav ul li:hover ul li a {
+    text-align: center;
+    color: solid black;
+ }
+ #mainNav ul li:hover ul li:hover {
+    background-color: coral;
+ }
+
+ 
+
+.type__menu {
+   position: absolute;
+   background: #FFBF69;
+   opacity: 0;
+   visibility: none;
+}
+.type__menu--hover:hover{
+   opacity: 1;
+   visibility: visible;
+}
+.productsection {
+   display: flex;
+   margin-top: 10rem;
+   padding: 1rem;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;   
+}
+.cardsection__product {   
+   width: 25rem;
+   position: relative;
+   margin: 1rem;
+   border: 0.5rem solid black;
+   padding: 5rem;
+   background-image: url(https://static.vecteezy.com/system/resources/previews/000/464/025/non_2x/dog-seamless-pattern-theme-bone-paw-foot-print-for-use-as-wallpaper-or-background-vector.jpg);
+   top: 1rem;
+}
+.card__img {
+   width: 100%;
+   padding: 0;    
+   border: 1px solid black;
+}
+.card__heading {   
+   border: 1px solid black;
+   background-color: #fff;
+   width: 100%;
+   margin: 0;
+   text-align: center;  
+}
+.card__description {
+   background: #FFBB27;
+   text-align: center;
+   width: 100%;
+}
+.card__price {
+   border: 1px solid black;
+   width: 25%;
+   text-align: center;
+   background: blanchedalmond;
+   font-weight: bold;
+}
+
+.photosection {
+   position: relative;
+   justify-content: center;
+   align-items: center;
+   margin-top: 8rem;   
+   overflow-x: hidden;
+   width: 99vw;   
+   display: grid;
+   column-gap: 8px;
+   row-gap: 8px;
+   grid-template-columns: repeat(auto-fill, minmax(300px,300px));
+}
+
+
+.card__img2 {
+   display: flex;
+   flex-direction: column;
+   width: 300px;
+   height: 300px;
+   padding: 1rem;
+   object-fit: cover;
+   object-position: center;
+   background-image: url(https://static.vecteezy.com/system/resources/previews/000/464/025/non_2x/dog-seamless-pattern-theme-bone-paw-foot-print-for-use-as-wallpaper-or-background-vector.jpg);
+   border: 2px solid black;
+}
+.multimedia__section {
+   position: relative;
+   top: 1rem;
+}
+.contact__fieldset {
+   position: relative;
+   top: 1rem;
+   padding: 1rem;
+}
+.herosimg {
+   width: 100%;
+}
+.section__zero {
+   width: 95%;   
+   
+}
+.img__size {
+   width: 60rem;
+   height: 40rem;
+}
+.div__left {
+   display: flex;   
+   align-items: center;
+   margin-right: 0.5rem;
+   margin-left: 0.5rem;
+   
+}
+.section__text {
+   display: flex;
+   flex-direction: column;
+   background-color: #CBF3F0;  
+   padding: 1rem;    
+}
+.section__header {
+   text-decoration-line: underline;
+}
+.section__one {
+   width: 95%;
+}
+.div__right {
+   display:flex;
+   text-align: right;
+   align-items:center;
+   flex-direction: row-reverse;
+   margin-right: 0.5rem;
+   margin-left: 0.5rem;
+}
+.contact__form {
+   margin-right: 0.5rem;
+   margin-left: 0.5rem;
+   display: flex;
+   
+   flex-wrap: wrap;
+   flex-direction: rows;
+   justify-content: space-around;   
+}
+.contact__social {
+   display: flex;   
+   align-content: center;
+   flex-direction: column;
+}
+.fa:hover {
+   opacity: 0.7;
+}
+.fa {
+   padding: 20px;
+   font-size: 30px;
+   width: 50px;
+   text-align: center;
+   text-decoration: none;
+   width: 5rem
+   
+ }
+ .fa-facebook {
+   background: #3B5998;
+   color: white;
+ }
+ .fa-youtube {
+   background: #bb0000;
+   color: white;
+ }
+ .fa-instagram {
+   background: #125688;
+   color: white;
+ }
+ .fa-twitter {
+   background: #55ACEE;
+   color: white;
+ }
+ .form__container {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    justify-content: space-between;
+    gap: 1rem;
+ }
+ .contact__form {
+    display: flex;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 2rem;
+    padding: 1.5rem;
+    height: 100%;
+ }
+ .mensaje{
+    display: flex;
+    flex-direction: column;
+    order: 2;
+ }
+ .msg--textarea {
+    flex: 1;
+    min-width: 18rem;
+    background: transparent;
+    color: #fff;
+    padding: 1.5rem;
+ }
+.input__area {
+   flex: 1;
+   order: 1;
+   margin-right: 2rem;
+}
+.input__area input {
+   width: 100%;
+   background: transparent;
+   color: #fff;
+   border-radius: 4rem;
+}
+.input__area input,
+.input__area button {
+   padding: 1rem;
+   margin-bottom: 1rem;
+}
+.input__area button{
+   background: #FF9F1C ;
+   color: #fff;
+   border: 0;
+   padding: 1rem 5rem;
+   border-radius: 4rem;
+   font-size: 1rem;
+}
+.footer__box {
+   position: relative;
+   margin-top: 10rem;
+   padding: 5rem 10rem;
+   text-align: center;
+   display: flex;
+   flex-direction: row;
+   width: 100%;  
+   background-color: #CBF3F0;   
+}
+.email-box {
+   display: flex;
+   height: 3rem;
+   justify-content: center;
+}
+.email-box i {
+   width: 3rem;
+   height: 3rem;
+   line-height: 3rem;
+}
+.finput, .fbtn {
+   border: none;
+   outline: none;
+}
+.finput {
+   width: 0px;
+   transition: 0.5s;
+}
+.email-box:hover > .finput, .finput:focus {
+   width: 260px;
+   padding: 0 10px;
+}
+.fbtn {
+   background: #2f3542;
+   color: white;
+   padding: 0 10px;
+   text-transform: uppercase;
+   cursor: pointer;
+}
+.contactarticle {
+   margin-top: 10rem;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   justify-content: space-between;
+   gap: 1rem;
+}
+.contactarticle h2 {
+   text-decoration: underline;
+}
+.serviceform__container {
+   width: 50%;
+}
+.serviceinput__area {
+   display: flex;
+   background: rgba(203, 243, 240, 0.5);
+   border-radius: 2rem;
+   padding: 1.5rem;
+   flex-direction: column;
+   width: 100%;   
+   }
+.serviceinput__area input {   
+   background: #fff;
+   border-radius: 4rem;
+   padding: 1rem;   
+}
+.serviceinput__area p {
+   position: relative;
+   left: 1rem;
+   bottom: 1rem;
+}
+.serviceinput__area select 
+ {
+   border-radius: 1rem;  
+   height: 2rem;
+}
+.label__textarea {
+   bottom: 10rem;
+}
+.servicios__textarea {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.servicios__textarea textarea {
+   min-width: 100%;
+   border-radius: 1rem;
+   padding: 1rem;
+   border-width: 2px;
+   border-style: inset;
+   border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+   color: -internal-light-dark(black, white);
+}
+.servicios__textarea input {
+   background: #FF9F1C ;
+   color: #fff;   
+   padding: 1rem 5rem;
+   border-radius: 4rem;
+   font-size: 1rem;   
+}
+.servicios__textarea label {
+   font-size: 2rem;
+   text-decoration: underline;
+}
+.multimedia__section {
+   display: block;
+   margin: 10%
+}
+.multimedia__section iframe {   
+      display: inline;
+      width: 40%;
+      height: 30rem;
+      position: relative;
+      margin: 2rem;
+      border: 0.5rem solid black;
+      padding: 5rem;
+      background-image: url(https://static.vecteezy.com/system/resources/previews/000/464/025/non_2x/dog-seamless-pattern-theme-bone-paw-foot-print-for-use-as-wallpaper-or-background-vector.jpg);
+      top: 1rem;
+      left: 4rem;
+}
+
+/* media queries  */
+
+/* mobile  */
+@media only screen and (max-width: 400px) {
+   
+  #mainNav ul {
+     grid-template-columns: 1fr;  
+     width: 400px;         
+  }
+  #mainNav ul li {
+     padding: 0;
+  }
+ 
+  
+  #mainHeader {
+     width: 400px;
+  }
+  
+  .herosimg {
+     
+     display: none;
+  }
+  .img__size {
+     width: 400px;
+     height: 400px;
+  }
+  .div__left, .div__right {
+     display: flex;
+     flex-direction: column;
+  }
+  main {
+     margin-top: 13rem;
+  }
+  .footer__box {
+   width: 100%;
+   place-items: center;
+   align-items: center;
+   justify-content: center;
+   padding: 0
+  }
+ .form__container {
+    width: 100%;
+    display: flex;
+    margin: 1rem;
+    flex-direction: column;
+ }
+ .contact__social {
+    flex-direction: row;
+    justify-content: center;
+ }
+ .ubication {
+    width: 100%;
+    height: 400px;
+    padding: 0;
+    margin: 0;
+ }
+ .section__text {
+    text-align: center;
+ }     
+}
+
+/* tablet  */
+
+@media only screen and (min-width: 401px) and (max-width: 768px) {
+   
+   #mainNav ul {
+      grid-template-columns: 1fr;  
+      width: 100%;         
+   }
+   #mainNav ul li {
+      padding: 0;
+   }
+   
+   #mainHeader {
+      width: 100%;
+   }
+   
+   .herosimg {
+      
+      display: none;
+   }
+   .img__size {
+      width: 768px;
+      height: 768px;
+   }
+   .div__left, .div__right {
+      display: flex;
+      flex-direction: column;
+   }
+   main {
+      margin-top: 13rem;
+   }
+   footer {
+    width: 100%;
+    place-items: center;
+    align-items: center;
+    justify-content: center;
+   }
+  .form__container {
+     width: 100%px;
+     display: flex;
+     margin: 1rem;
+     flex-direction: column;
+  }
+  .contact__social {
+     flex-direction: row;
+     justify-content: center;
+  }
+  .section__text {
+     text-align: center;
+  }     
+ }
+
+/* laptop  */
+ @media only screen and (min-width: 769px) and (max-width: 1024px) {
+   #mainNav ul {
+       
+      width: 100%;         
+   }
+   #mainNav ul li {
+      padding: 0;
+   }
+   
+   #mainHeader {
+      width: 100%;
+   }
+   
+   
+   
+   .div__left, .div__right {
+      display: flex;
+      flex-direction: column;
+   }
+   main {
+      margin-top: 5rem;
+   }
+   footer {
+    width: 100%;
+    place-items: center;
+    align-items: center;
+    justify-content: center;
+   }
+  .form__container {
+     width: 100%px;
+     display: flex;
+     margin: 1rem;
+     flex-direction: column;
+  }
+  .contact__social {
+     flex-direction: row;
+     justify-content: center;
+  }
+  .section__text {
+     text-align: center;
+  }     
+ }
+ 
+
+
+   
