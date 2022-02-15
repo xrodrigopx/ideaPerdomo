@@ -194,9 +194,10 @@ body {
    flex-direction: column;
    background-color: #CBF3F0;  
    padding: 1rem;    
+   animation: fadeIn 15s;
 }
 .section__header {
-   text-decoration-line: underline;
+   text-decoration-line: underline;   
 }
 .section__one {
    width: 95%;
@@ -420,6 +421,14 @@ body {
       background-image: url(https://static.vecteezy.com/system/resources/previews/000/464/025/non_2x/dog-seamless-pattern-theme-bone-paw-foot-print-for-use-as-wallpaper-or-background-vector.jpg);
       top: 1rem;
       left: 4rem;
+}
+@keyframes fadeIn {
+   from {
+      opacity: 0;
+   }
+   to{
+      opacity: 1;
+   }
 }
 
 /* media queries  */
